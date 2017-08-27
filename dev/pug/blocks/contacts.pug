@@ -1,0 +1,40 @@
+mixin contacts()
+    #contacts.contacts-section
+        .container
+            section.contact-card
+                header.contact-card__header
+                    h2 Contact Information
+                    h4 Mauris leo nisl, malesuada id faucibus non, gravida sit amet lectus
+                .contact-info
+                    .contact-info__logo MA
+                    .contact-info__group
+                        .contact-info__additional
+                            p Donec lorem ante, efficitur?
+                            p Sed aliquet sagittis odio commodo facilisis?
+                            p Vivamus vel lacus tellus?
+                        .contact-info__vcard.vcard
+                            h4.fn.org Marketing Agency
+                            p.role.title Lorem ipsum dolor sit amet
+                            p.icon.icon_location
+                                a.adr.js-anchor(href="#gmap")
+                                    span.country-name CountryName
+                                    | ,&nbsp;
+                                    span.locality CityName
+                                    | ,&nbsp;
+                                    span.address Address
+                            p.icon.icon_mail
+                                a.email(href="#") contact@example.com
+                        ul.contact-info__social
+                            li
+                                a.icon.icon_fb(rel="nofollow") I'm on Facebook
+                            li
+                                a.icon.icon_twi(rel="nofollow") My Twitter
+                            li
+                                a.icon.icon_gplus(rel="nofollow") I'm on Google+
+                            li
+                                a.icon.icon_vk(rel="nofollow") I'm in Vk
+                            li
+                                a.icon.icon_in(rel="nofollow") My Linkedin profile
+                            li
+                                a.icon.icon_rss(rel="nofollow") RSS feed... maybe
+        #gmap.gmap

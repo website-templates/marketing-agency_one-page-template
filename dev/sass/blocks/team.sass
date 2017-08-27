@@ -1,0 +1,60 @@
+// Team members list
+.team
+    width: 100%
+
+
+    &__member
+        display: inline-block
+        width: calc(25% - 50px)
+        margin: 0 20px 40px
+        background-color: #fff
+        box-shadow: 2px 2px 4px -2px #111
+        vertical-align: top
+
+        @media screen and (max-width: 1200px)
+            width: calc(33.3% - 50px)
+
+        @media screen and (max-width: 800px)
+            width: calc(50% - 50px)
+
+        @media screen and (max-width: 480px)
+            width: calc(100% - 40px)
+
+        &:last-child
+            @media screen and (max-width: 480px)
+                margin-bottom: 0
+
+        & img
+            width: 100%
+
+
+    &__member-info
+        display: block
+        width: 100%
+        padding: 15px 10px
+
+
+    &__member-name
+        margin-bottom: 5px
+        font-size: 30px
+        font-weight: bold
+
+        @media screen and (max-width: 1200px)
+            font-size: 25px
+
+        @media screen and (max-width: 800px)
+            font-size: 20px
+
+
+    &__member-role
+        display: block
+        margin-bottom: 20px
+        font-size: 18px
+        text-transform: capitalize
+
+        @media screen and (max-width: 1200px)
+            font-size: 16px
+
+
+    &__member-descr
+        text-align: left

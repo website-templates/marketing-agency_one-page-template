@@ -1,0 +1,72 @@
+// Hero image section
+.home-section
+    position: relative
+    width: 100%
+    overflow: hidden
+
+    &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        display: block
+        width: 100%
+        height: 0
+        clear: both
+        box-shadow: 0 0 2px 1px $color-dark
+
+    &__bg
+        position: absolute
+        min-width: 100%
+        min-height: 100%
+        z-index: 0
+        background: transparent url('../images/bg.jpg') center 0 no-repeat
+        background-attachment: fixed
+        background-size: cover
+
+    &__overlay
+        position: relative
+        width: 100%
+        height: 100%
+        min-height: 100%
+        background-color: transparent
+        background-color: $color-overlay_bg
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)
+        zoom: 1
+        background-image: url($img-overlay_bg)
+        background-repeat: repeat
+        background-attachment: fixed
+
+    &__header
+        padding: 200px 10px 400px
+        text-align: center
+        @media screen and (max-width: 600px)
+            padding: 100px 0 300px
+
+        & h1
+            margin-bottom: 10px
+            font-size: 100px
+            font-family: $font-sans
+            font-weight: bold
+            color: $color-light
+            text-shadow: 1px 1px 1px $color-dark
+
+            @media screen and (max-width: 1200px)
+                font-size: 75px
+
+            @media screen and (max-width: 800px)
+                font-size: 50px
+        & h2
+            color: $color-light
+
+    &__header-label
+        font-family: $font-serif
+        font-size: 40px
+        color: $color-light
+
+        @media screen and (max-width: 1200px)
+            font-size: 35px
+
+        @media screen and (max-width: 800px)
+            font-size: 30px
+
