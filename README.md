@@ -6,18 +6,20 @@ Based on the [Portfolio one page template](https://github.com/website-templates/
 
 Demo: [http://website-templates.github.io/marketing-agency_one-page-template](http://website-templates.github.io/marketing-agency_one-page-template/)
 
+![Mockup demo](screenshots/pic.jpg)
+
 
 ## Contents
 * [Folder structure](#folder-and-file-structure)
 * [Requirements](#requirements)
-	- [Editorconfig](#editorconfig)
+    - [Editorconfig](#editorconfig)
 * [Site configuration](#site-configuration)
 * [Tasks](#tasks)
-	- [Start](#start)
-	- [Dev](#dev)
-	- [Build](#build)
-	- [Rebuild](#rebuild)
-	- [Server](#server)
+    - [Start](#start)
+    - [Dev](#dev)
+    - [Build](#build)
+    - [Rebuild](#rebuild)
+    - [Server](#server)
 * [Live reload](#live-reload)
 * [License](#license)
 
@@ -77,17 +79,17 @@ Demo: [http://website-templates.github.io/marketing-agency_one-page-template](ht
 │   └── data/                                  * configs and data for templates
 │
 └── build/                                     * built source
-	├── index.html
-	├── page.html
-	|
-	└── static/                                * static assets
-		├── css/                               * minified styles
-		|
-		├── images/                            * minified images
-		│
-		├── js/                                * minified assembled js
-		|
-		└── fonts/                             * @font-face-ready webfonts
+    ├── index.html
+    ├── page.html
+    |
+    └── static/                                * static assets
+        ├── css/                               * minified styles
+        |
+        ├── images/                            * minified images
+        │
+        ├── js/                                * minified assembled js
+        |
+        └── fonts/                             * @font-face-ready webfonts
 
 ```
 
