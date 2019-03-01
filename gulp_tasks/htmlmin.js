@@ -7,8 +7,8 @@ var gulp = require('gulp'),
 
 //Minify *.html files
 gulp.task('htmlmin:main', function() {
-    return gulp.src(paths.build.main + '/*.html')
-        .pipe(plumber())
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest(paths.build.main));
+  return gulp.src(paths.build.main + '/*.html')
+    .pipe(plumber())
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest(paths.build.main));
 });

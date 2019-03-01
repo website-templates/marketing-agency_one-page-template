@@ -5,11 +5,11 @@ var gulp = require('gulp'),
 
 // Static server
 gulp.task('browserSync:server', function() {
-    browserSync({
-        server: paths.build.main
-    });
+  browserSync({
+    server: paths.build.main
+  });
 });
 
 gulp.task('browserSync:reload', function() {
-    return browserSync.reload();
+  return browserSync.reload();
 });

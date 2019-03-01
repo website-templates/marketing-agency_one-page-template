@@ -8,33 +8,29 @@ var gulp = require('gulp'),
 
 
 gulp.task('postcss:dev', function () {
-    var processors = [
-        autoprefixer({
-            browsers: [
-                '> 1%',
-                'last 30 versions',
-                'Opera 12.1',
-                'Explorer > 7',
-                'Safari >= 5'
-            ],
-            cascade: true
-        })
-    ];
-    return gulp.src(paths.build.css + '/*.min.css')
-        .pipe(plumber())
-        .pipe(postcss(processors))
-        .pipe(gulp.dest(paths.build.css));
+  var processors = [
+    autoprefixer({
+      browsers: [
+        'last 4 versions'
+      ],
+      cascade: true
+    })
+  ];
+  return gulp.src(paths.build.css + '/*.min.css')
+    .pipe(plumber())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(paths.build.css));
 });
 
 gulp.task('postcss:build', function () {
-    var processors = [
-        csso({
-            keepSpecialComments: '*',
-            restructure: false
-        })
-    ];
-    return gulp.src(paths.build.css + '/*.min.css')
-        .pipe(plumber())
-        .pipe(postcss(processors))
-        .pipe(gulp.dest(paths.build.css));
+  var processors = [
+    csso({
+      keepSpecialComments: '*',
+      restructure: false
+    })
+  ];
+  return gulp.src(paths.build.css + '/*.min.css')
+    .pipe(plumber())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(paths.build.css));
 });

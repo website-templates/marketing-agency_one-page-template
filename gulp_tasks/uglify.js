@@ -6,8 +6,8 @@ var gulp = require('gulp'),
 
 
 gulp.task('uglify:main', function() {
-    return gulp.src(paths.build.js + '/*.min.js')
-        .pipe(plumber())
-        .pipe(uglify())
-        .pipe(gulp.dest(paths.build.js));
+  return gulp.src(paths.build.js + '/*.min.js')
+    .pipe(plumber())
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.build.js));
 });

@@ -7,11 +7,11 @@ var gulp = require('gulp'),
 
 // Minify image files
 gulp.task('imagemin:main', function () {
-    return gulp.src(paths.dev.images + '/**/*.{png,jpg,gif,svg}')
-        .pipe(plumber())
-        .pipe(imagemin({
-            progressive: true,
-            optimizationLevel: 7
-        }))
-        .pipe(gulp.dest(paths.build.images));
+  return gulp.src(paths.dev.images + '/**/*.{png,jpg,gif,svg}')
+    .pipe(plumber())
+    .pipe(imagemin({
+      progressive: true,
+      optimizationLevel: 7
+    }))
+    .pipe(gulp.dest(paths.build.images));
 });

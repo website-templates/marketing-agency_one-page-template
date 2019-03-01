@@ -7,10 +7,10 @@ var gulp = require('gulp'),
 
 //Combine media queries in result *.css files
 gulp.task('cmq:main', function () {
-    return gulp.src(paths.build.css + '/*.min.css')
-        .pipe(plumber())
-        .pipe(cmq({
-            log: false
-        }))
-        .pipe(gulp.dest(paths.build.css));
+  return gulp.src(paths.build.css + '/*.min.css')
+    .pipe(plumber())
+    .pipe(cmq({
+      log: false
+    }))
+    .pipe(gulp.dest(paths.build.css));
 });
