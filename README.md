@@ -193,3 +193,5 @@ This project uses BrowserSync as static server with enabled and configured live 
 
 ## License
 [MIT](https://github.com/website-templates/marketing-agency_one-page-template/blob/master/LICENSE.md)
+
+#notes
